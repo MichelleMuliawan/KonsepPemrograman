@@ -1,0 +1,92 @@
+#include <stdio.h>
+
+int main()
+{
+    int angka;
+    char huruf;
+    printf ("Masukan angka = ");
+    scanf("%d", &angka);
+    if (angka >= 0 && angka < 44 )
+    huruf = 'E';
+    else if (angka >=45 && angka < 54 )
+    huruf = 'D';
+    else if (angka >= 55 && angka < 66 )
+    huruf = 'C';
+    else if (angka >= 67 && angka < 79 )
+    huruf = 'B';
+    else huruf = 'A';
+    if (angka <= -1 || angka > 100)
+    printf ("\nTidak Valid\n");
+    else 
+    printf ("\nHuruf Anda %c\n", huruf);
+
+    return 0;
+}
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+#include <stdio.h>
+
+int main()
+{    
+    int angka;
+    char huruf;
+    printf ("Masukan angka = ");
+    scanf("%d", &angka);
+    if (angka >= 0)
+        if (angka >=45)
+            if (angka >= 55)
+                if (angka >= 67)
+                    if (angka >= 80)
+                        huruf = 'A';
+                    else huruf = 'B';
+                else huruf = 'C';
+            else huruf = 'D';
+        else huruf = 'E';
+    if (angka <= -1 || angka > 100)
+    printf ("\nTidak Valid\n");
+    else 
+    printf ("\nHuruf Anda %c\n", huruf);
+
+    return 0;
+}
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+#include <stdio.h>
+#include <conio.h>
+
+int main()   
+{
+    char pilihan;
+    float angka1, angka2, hasil;
+    printf ("1. Penjumlahan\n");
+    printf ("2. Pengurangan\n");
+    printf ("3. Perkalian\n");
+    printf ("4. Pembagaian\n");
+    printf ("Masukan pilihan = ");
+    scanf ("%c", &pilihan);
+    printf ("\nMasukan angka pertama = ");
+    scanf("%f", &angka1);
+    printf ("Masukan angka kedua = ");
+    scanf("%f", &angka2);
+    switch (pilihan)
+    {   case '1': 
+        hasil = angka1 + angka2; 
+        printf("Hasil %0.3f", hasil); break;
+        case '2': 
+        hasil = angka1 - angka2; 
+        printf("Hasil %0.3f", hasil); break;
+        case '3': 
+        hasil = angka1 * angka2; 
+        printf("Hasil %0.3f", hasil); break;
+        case '4': 
+        hasil = angka1 / angka2; 
+        printf("Hasil %0.3f", hasil); break;
+        default : printf("Tidak Valid\n");
+    }
+
+    return 0;
+}
+                   
