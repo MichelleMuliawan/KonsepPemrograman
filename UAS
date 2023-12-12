@@ -1,0 +1,150 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    for (a=1; a<=1; a++) 
+    { 
+        printf ("Bahasa C\n");
+        int b;
+        for (b=1; b<=3; b++)
+        {
+            printf ("Ini adalah double looping\n");
+            }
+        }
+    
+    return 0;
+}
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 1;
+    do 
+    {   printf ("Bahasa C\n");
+        int b = 1;
+        do
+        {   printf ("Ini adalah double looping\n");
+            b++;
+        }   while (b<=3);
+        a++;
+    }   while (a<=1);
+    
+    return 0;
+}
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+#include <stdio.h>
+
+void konversi ()
+{   float miles, km;
+    printf ("Masukkan kilometer = ");
+    scanf ("%f", &km);
+    miles = km * 0.62137119224;
+    printf ("Nilai Konversi kilometer ke miles = %f\n", miles);
+}
+    
+void nilai_terendah ()
+{   int nt, x, y;
+    for (x = 0; x<9; x++)
+    {   scanf ("%d", &y);
+        if (y<nt)
+        nt=y;
+    }
+    printf ("Nilai Terendah = %d", nt);
+}
+
+void nilai_ratarata ()
+{   float a, b, c, d, e, f, g, h, i, j, nr;
+    printf ("Masukkan angka 1 = ");
+    scanf ("%f", &a);
+    printf ("Masukkan angka 2 = ");
+    scanf ("%f", &b);
+    printf ("Masukkan angka 3 = ");
+    scanf ("%f", &c);
+    printf ("Masukkan angka 4 = ");
+    scanf ("%f", &d);
+    printf ("Masukkan angka 5 = ");
+    scanf ("%f", &e);
+    printf ("Masukkan angka 6 = ");
+    scanf ("%f", &f);
+    printf ("Masukkan angka 7 = ");
+    scanf ("%f", &g);
+    printf ("Masukkan angka 8 = ");
+    scanf ("%f", &h);
+    printf ("Masukkan angka 9 = ");
+    scanf ("%f", &i);
+    printf ("Masukkan angka 10 = ");
+    scanf ("%f", &j);
+    nr = (a+b+c+d+e+f+g+h+i+j)/10;
+    printf ("Nilai Rata-Rata = %f", nr);
+}
+
+void nilai_median ()
+{   float e, f, nm;
+    nm = (e+f)/2;
+    printf("Nilai Median = %f", nm);
+}
+
+
+int main()
+{   char pilih;
+    float kn, nr, nm, km, a, b, c, d, e, f, g, h, i, j;
+    int nt, x, y;
+    printf ("a. Konversi kilometer ke mile\n");
+    printf ("b. Mencari Nilai Terendah\n");
+    printf ("c. Mencari Nilai Rata-Rata\n");
+    printf ("d. Mencari Nilai Median/Nilai Tengah\n");
+    printf ("e. Exit\n ");
+    printf ("Pilih = ");
+    scanf ("%c", &pilih);
+    switch (pilih)
+    {   case 'a': 
+        konversi (); 
+        break;
+        
+        case 'b':
+        printf ("Masukkan 10 angka =\n");
+        scanf ("%d", &nt);
+        nilai_terendah ();
+        break;
+        
+        case 'c': 
+        nilai_ratarata (); 
+        break;
+        
+        case 'd': 
+        printf ("Masukkan 10 angka berurut");
+        printf ("Masukkan angka 1 = ");
+        scanf ("%f", &a);
+        printf ("Masukkan angka 2 = ");
+        scanf ("%f", &b);
+        printf ("Masukkan angka 3 = ");
+        scanf ("%f", &c);
+        printf ("Masukkan angka 4 = ");
+        scanf ("%f", &d);
+        printf ("Masukkan angka 5 = ");
+        scanf ("%f", &e);
+        printf ("Masukkan angka 6 = ");
+        scanf ("%f", &f);
+        printf ("Masukkan angka 7 = ");
+        scanf ("%f", &g);
+        printf ("Masukkan angka 8 = ");
+        scanf ("%f", &h);
+        printf ("Masukkan angka 9 = ");
+        scanf ("%f", &i);
+        printf ("Masukkan angka 10 = ");
+        scanf ("%f", &j);
+        nilai_median ();
+        break;
+        
+        default : printf("Exit\n");
+    }
+
+    
+    return 0;
+}
