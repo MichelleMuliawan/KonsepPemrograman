@@ -1,0 +1,112 @@
+#include <stdio.h>
+
+int main()
+{
+    char jenis;
+    int hargaa = 7650;
+    int hargab = 11150;
+    int jumlah, harga, diskon;
+    printf ("Pertalite = A\n");
+    printf ("Pertamax = B\n");
+    printf ("Jenis bensin = ");
+    scanf ("%c", &jenis);
+    printf ("Jumlahh bensin = ");
+    scanf ("%d", &jumlah);
+
+    switch (jenis)
+    {   case 'A': 
+        harga = jumlah *  hargaa;
+        printf("Harga %d", harga); break;
+        if (jumlah >= 150000)
+        total = 0.99 * harga;
+        else if (jumlah >= 200000)
+        total = 0.98 * harga;
+        else if (jumlah >= 250000)
+        total = 0.97 * harga;
+        case 'B': 
+        harga = jumlah * hargab;
+        printf("Harga %d", harga); break;
+        if (jumlah >= 300000)
+        total = 0.98 * harga;
+        else if (jumlah >= 400000)
+        total = 0.97 * harga;
+        else if (jumlah >= 500000)
+        total = 0.96 * harga;
+        default : printf("Tidak Valid\n");
+    }
+    
+    return 0;
+}
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+#include <stdio.h>
+
+int main()
+{
+    int a, b, c, d, e, z;
+    printf (" Masukkan a = ");
+    scanf ("%d", &a);
+    printf (" Masukkan b = ");
+    scanf ("%d", &b);
+    printf (" Masukkan c = ");
+    scanf ("%d", &c);
+    printf (" Masukkan d = ");
+    scanf ("%d", &d);
+    printf (" Masukkan e = ");
+    scanf ("%d", &e);
+    z=a<b? a:b;
+    z=c<min? c:min;
+    z=d<min? d:min;
+    z=e<min? e:min;
+    printf ("%d", z);
+    
+    return 0;
+
+}
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+#include <stdio.h>
+
+int main()
+{    
+    int y, x;
+    printf ("Masukkan x = ");
+    scanf ("%d", &x);
+    printf ("Masukkan y = ");
+    scanf ("%d", &y);
+    if ( y == 8) 
+    if ( x == 5 ) 
+    printf("@@@@@\n"); 
+    else {
+    printf ( "#####\n"); 
+    printf ( "$$$$$\n");
+    } 
+    printf ( "&&&&&\n");
+
+    return 0;
+}
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+#include <stdio.h>
+
+int main()
+{
+    int y, x;
+    printf ("Masukkan x = ");
+    scanf ("%d", &x);
+    printf ("Masukkan y = ");
+    scanf ("%d", &y);
+    if ( y == 8) 
+    if ( x == 5 ) 
+    printf("@@@@@\n"); 
+    else {
+    printf ( "#####\n"); 
+    printf ( "$$$$$\n");
+    printf ( "&&&&&\n");
+    }
+
+    return 0;
+}
